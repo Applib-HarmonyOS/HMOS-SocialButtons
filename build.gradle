@@ -43,7 +43,7 @@ allprojects {
         configFile file("config/checkstyle.xml")
 
         source 'entry/src/main/java'
-        source 'flexiblecalendar/src/main/java'
+        source 'socialbuttons/src/main/java'
         include '**/*.java'
 
         classpath = files()
