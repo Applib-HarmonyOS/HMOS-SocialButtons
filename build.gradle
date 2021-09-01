@@ -55,7 +55,7 @@ checkstyle {
 
 sonarqube {
     properties {
-        property "sonar.projectKey", "applibgroup_SocialButtons"
+        property "sonar.projectKey", "applibgroup_HMOS-SocialButtons"
         property "sonar.organization", "applibgroup"
         property "sonar.host.url", "https://sonarcloud.io"
         property "sonar.sources", "entry,libsocialbuttons"
