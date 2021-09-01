@@ -18,6 +18,7 @@ import ohos.global.resource.WrongTypeException;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 import ohos.media.image.PixelMap;
+
 import java.io.IOException;
 import java.util.Optional;
 
@@ -225,9 +226,10 @@ public class SocialButton extends Button implements Component.DrawTask {
      * @param attrs attrs
      */
     private void initAttributes(AttrSet attrs) {
-        String mSocial = (attrs.getAttr(MSB_SOCIAL).isPresent() ? attrs.getAttr(MSB_SOCIAL).get().getStringValue() : DEFAULT_SOCIAL);
+        String social = (attrs.getAttr(MSB_SOCIAL).isPresent() ? attrs.getAttr(MSB_SOCIAL).get().getStringValue() :
+                DEFAULT_SOCIAL);
         try {
-            if (mSocial.equalsIgnoreCase(DEFAULT_SOCIAL)) {
+            if (social.equalsIgnoreCase(DEFAULT_SOCIAL)) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_facebook_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_facebook_green)
@@ -236,7 +238,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 0;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("whatsapp")) {
+            } else if (social.equalsIgnoreCase("whatsapp")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_whatsapp_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_whatsapp_green)
@@ -245,7 +247,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 1;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("twitter")) {
+            } else if (social.equalsIgnoreCase("twitter")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_twitter_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_twitter_green)
@@ -254,7 +256,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 2;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("linkedin")) {
+            } else if (social.equalsIgnoreCase("linkedin")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_linkedin_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_linkedin_green)
@@ -263,7 +265,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 3;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("youtube")) {
+            } else if (social.equalsIgnoreCase("youtube")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_youtube_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_youtube_green)
@@ -272,7 +274,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 4;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("dropbox")) {
+            } else if (social.equalsIgnoreCase("dropbox")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_dropbox_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_dropbox_green)
@@ -281,7 +283,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 5;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("instagram")) {
+            } else if (social.equalsIgnoreCase("instagram")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_instagram_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_instagram_green)
@@ -290,7 +292,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 6;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("quora")) {
+            } else if (social.equalsIgnoreCase("quora")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_quora_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_quora_green)
@@ -299,7 +301,19 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 7;
                 this.invalidate();
-            }  else if (mSocial.equalsIgnoreCase("flickr")) {
+            }
+            checkOne(social);
+        } catch (IOException | NotExistException | WrongTypeException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * to reduce cognitive complexity.
+     */
+    private void checkOne(String social) {
+        try {
+            if (social.equalsIgnoreCase("flickr")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_flickr_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_flickr_green)
@@ -308,7 +322,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 10;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("vine")) {
+            } else if (social.equalsIgnoreCase("vine")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_vine_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_vine_green)
@@ -317,7 +331,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 11;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("pinterest")) {
+            } else if (social.equalsIgnoreCase("pinterest")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_pinterest_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_pinterest_green)
@@ -326,7 +340,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 12;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("tumblr")) {
+            } else if (social.equalsIgnoreCase("tumblr")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_tumblr_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_tumblr_green)
@@ -335,7 +349,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 13;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("odnoklassniki")) {
+            } else if (social.equalsIgnoreCase("odnoklassniki")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_odnoklassniki_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_odnoklassniki_green)
@@ -344,7 +358,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 14;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("vkontakte")) {
+            } else if (social.equalsIgnoreCase("vkontakte")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_vkontakte_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_vkontakte_green)
@@ -353,7 +367,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 15;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("foursquare")) {
+            } else if (social.equalsIgnoreCase("foursquare")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_foursquare_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_foursquare_green)
@@ -362,7 +376,7 @@ public class SocialButton extends Button implements Component.DrawTask {
                         .getInteger();
                 imageType = 16;
                 this.invalidate();
-            } else if (mSocial.equalsIgnoreCase("google")) {
+            } else if (social.equalsIgnoreCase("google")) {
                 mRed = (int) getResourceManager().getElement(ResourceTable.Integer_googleplus_red)
                         .getInteger();
                 mGreen = (int) getResourceManager().getElement(ResourceTable.Integer_googleplus_green)
