@@ -43,7 +43,7 @@ allprojects {
         configFile file("config/checkstyle.xml")
 
         source 'entry/src/main/java'
-        source 'socialbuttons/src/main/java'
+        source 'libsocialbuttons/src/main/java'
         include '**/*.java'
 
         classpath = files()
@@ -58,8 +58,8 @@ sonarqube {
         property "sonar.projectKey", "applibgroup_SocialButtons"
         property "sonar.organization", "applibgroup"
         property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.sources", "entry,socialbuttons"
-        property "sonar.java.binaries", "entry/build,socialbuttons/build"
+        property "sonar.sources", "entry,libsocialbuttons"
+        property "sonar.java.binaries", "entry/build,libsocialbuttons/build"
         property "sonar.java.checkstyle.reportPaths", "build/reports/checkstyle/checkstyle.xml"
     }
 }
