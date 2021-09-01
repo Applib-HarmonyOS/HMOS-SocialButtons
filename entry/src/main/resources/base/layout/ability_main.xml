@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app="http://schemas.huawei.com/hap/res-auto"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    >
+
+    <in.championswimmer.libsocialbuttons.SocialFab
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:fab_colorNormal="#345896"
+        ohos:fab_elevation="4vp"
+        ohos:image_src="$media:logo_facebook"/>
+
+    <in.championswimmer.libsocialbuttons.SocialButton
+        ohos:id="$+id:btn_facebook"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:text="$string:login_facebook"
+        ohos:text_size="20vp"
+        app:msb_social="$string:facebook"/>
+
+</DirectionalLayout>

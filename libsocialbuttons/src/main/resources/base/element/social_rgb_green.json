@@ -1,0 +1,76 @@
+{
+  "integer": [
+    {
+      "name": "facebook_green",
+      "value": 89
+    },
+    {
+      "name": "twitter_green",
+      "value": 172
+    },
+    {
+      "name": "googleplus_green",
+      "value": 75
+    },
+    {
+      "name": "youtube_green",
+      "value": 0
+    },
+    {
+      "name": "linkedin_green",
+      "value": 123
+    },
+    {
+      "name": "instagram_green",
+      "value": 86
+    },
+    {
+      "name": "whatsapp_green",
+      "value": 194
+    },
+    {
+      "name": "pinterest_green",
+      "value": 32
+    },
+    {
+      "name": "vine_green",
+      "value": 191
+    },
+    {
+      "name": "snapchat_green",
+      "value": 252
+    },
+    {
+      "name": "quora_green",
+      "value": 36
+    },
+    {
+      "name": "dropbox_green",
+      "value": 126
+    },
+    {
+      "name": "flickr_green",
+      "value": 0
+    },
+    {
+      "name": "tumblr_green",
+      "value": 80
+    },
+    {
+      "name": "vkontakte_green",
+      "value": 102
+    },
+    {
+      "name": "odnoklassniki_green",
+      "value": 129
+    },
+    {
+      "name": "foursquare_green",
+      "value": 114
+    },
+    {
+      "name": "ripple_green",
+      "value": 132
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "color": [
+    {
+      "name": "facebook",
+      "value": "#3b5998"
+    },
+    {
+      "name": "twitter",
+      "value": "#00aced"
+    },
+    {
+      "name": "googleplus",
+      "value": "#dd4b39"
+    },
+    {
+      "name": "youtube",
+      "value": "#bb0000"
+    },
+    {
+      "name": "linkedin",
+      "value": "#007bb5"
+    },
+    {
+      "name": "instagram",
+      "value": "#125688"
+    },
+    {
+      "name": "whatsapp",
+      "value": "#4dc247"
+    },
+    {
+      "name": "pinterest",
+      "value": "#cb2027"
+    },
+    {
+      "name": "vine",
+      "value": "#00bf8f"
+    },
+    {
+      "name": "snapchat",
+      "value": "#fffc00"
+    },
+    {
+      "name": "quora",
+      "value": "#a82400"
+    },
+    {
+      "name": "dropbox",
+      "value": "#007ee5"
+    },
+    {
+      "name": "flickr",
+      "value": "#ff0084"
+    },
+    {
+      "name": "tumblr",
+      "value": "#32506d"
+    },
+    {
+      "name": "vkontakte",
+      "value": "#45668e"
+    },
+    {
+      "name": "odnoklassniki",
+      "value": "#ed812b"
+    },
+    {
+      "name": "foursquare",
+      "value": "#0072b1"
+    },
+    {
+      "name": "ripple",
+      "value": "#74848484"
+    }
+  ]
+}

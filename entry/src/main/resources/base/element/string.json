@@ -1,0 +1,40 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "socialloginbuttons"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "login_facebook",
+      "value": "Login With Facebook"
+    },
+    {
+      "name": "login_whatsapp",
+      "value": "Login With Whatsapp"
+    },
+    {
+      "name": "login_twitter",
+      "value": "Login With Twitter"
+    },
+    {
+      "name": "facebook",
+      "value": "facebook"
+    },
+    {
+      "name": "whatsapp",
+      "value": "whatsapp"
+    },
+    {
+      "name": "twitter",
+      "value": "twitter"
+    }
+  ]
+}

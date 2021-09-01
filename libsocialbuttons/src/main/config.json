@@ -1,0 +1,28 @@
+{
+  "app": {
+    "bundleName": "in.championswimmer.socialloginbuttons",
+    "vendor": "championswimmer",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    },
+    "apiVersion": {
+      "compatible": 5,
+      "target": 5,
+      "releaseType": "Release"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "in.championswimmer.libsocialbuttons",
+    "deviceType": [
+      "phone","tv","tablet"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "libsocialbuttons",
+      "moduleType": "har"
+    }
+  }
+}
