@@ -18,7 +18,6 @@ import ohos.global.resource.WrongTypeException;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 import ohos.media.image.PixelMap;
-
 import java.io.IOException;
 import java.util.Optional;
 

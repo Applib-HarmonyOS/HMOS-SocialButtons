@@ -19,6 +19,7 @@ package in.championswimmer.socialloginbuttons;
 import ohos.aafwk.ability.Ability;
 import ohos.aafwk.content.Intent;
 import in.championswimmer.socialloginbuttons.slice.MainAbilitySlice;
+
 /**
  * MainAbility To launch the Application.
  */
