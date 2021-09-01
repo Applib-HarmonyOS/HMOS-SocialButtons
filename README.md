@@ -1,4 +1,4 @@
-# Android SocialButtons
+# HMOS SocialButtons
 =================
 
 Introduction
