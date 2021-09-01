@@ -1,0 +1,89 @@
+{
+  "strarray": [
+    {
+      "name": "Social",
+      "value": [
+        {
+          "name": "facebook",
+          "value": "0",
+          "id": "0"
+        },
+        {
+          "name": "google",
+          "value": "1",
+          "id": "1"
+        },
+        {
+          "name": "dropbox",
+          "value": "2",
+          "id": "2"
+        },
+        {
+          "name": "flicker",
+          "value": "3",
+          "id": "3"
+        },
+        {
+          "name": "foursquare",
+          "value": "4",
+          "id": "4"
+        },
+        {
+          "name": "instagram",
+          "value": "5",
+          "id": "5"
+        },
+        {
+          "name": "linkedin",
+          "value": "6",
+          "id": "6"
+        },
+        {
+          "name": "odnoklassniki",
+          "value": "7",
+          "id": "7"
+        },
+        {
+          "name": "pinterest",
+          "value": "8",
+          "id": "8"
+        },
+        {
+          "name": "quora",
+          "value": "9",
+          "id": "9"
+        },
+        {
+          "name": "tumblr",
+          "value": "10",
+          "id": "10"
+        },
+        {
+          "name": "twitter",
+          "value": "11",
+          "id": "11"
+        },
+        {
+          "name": "vine",
+          "value": "12",
+          "id": "12"
+        },
+        {
+          "name": "vkontakte",
+          "value": "13",
+          "id": "13"
+        },
+        {
+          "name": "whatsapp",
+          "value": "14",
+          "id": "14"
+        },
+        {
+          "name": "youtube",
+          "value": "15",
+          "id": "15"
+        }
+      ]
+    }
+      ]
+}

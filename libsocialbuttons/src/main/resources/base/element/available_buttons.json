@@ -1,0 +1,57 @@
+{
+  "strarray": [
+    {
+      "name": "Available_buttons",
+      "value": [
+        {
+          "value": "facebook"
+        },
+        {
+          "value": "google"
+        },
+        {
+          "value": "dropbox"
+        },
+        {
+          "value": "flicker"
+        },
+        {
+          "value": "foursquare"
+        },
+        {
+          "value": "instagram"
+        },
+        {
+          "value": "linkedin"
+        },
+        {
+          "value": "odnoklassniki"
+        },
+        {
+          "value": "pinterest"
+        },
+        {
+          "value": "quora"
+        },
+        {
+          "value": "tumblr"
+        },
+        {
+          "value": "twitter"
+        },
+        {
+          "value": "vine"
+        },
+        {
+          "value": "vkontakte"
+        },
+        {
+          "value": "whatsapp"
+        },
+        {
+          "value": "youtube"
+        }
+      ]
+    }
+  ]
+}
