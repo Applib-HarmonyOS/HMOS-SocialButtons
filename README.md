@@ -1,4 +1,4 @@
-# HMOS SocialButtons
+# HMOS SocialButton
 =================
 
 Introduction
