@@ -1,4 +1,4 @@
-HMOS SocialButton
+HMOS SocialButtons
 =================
 [![.github/workflows/main.yml](https://github.com/applibgroup/HMOS-SocialButtons/actions/workflows/main.yml/badge.svg)](https://github.com/applibgroup/HMOS-SocialButtons/actions/workflows/main.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=applibgroup_HMOS-SocialButtons&metric=alert_status)](https://sonarcloud.io/dashboard?id=applibgroup_HMOS-SocialButtons)
