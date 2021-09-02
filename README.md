@@ -12,7 +12,7 @@ functionality. That you have to code yourself.
 
 # Source
 
-The code in this repository was inspired from [championswimmer/Android-SocialButtons - v1.3](https://github.com/championswimmer/Android-SocialButtons). We are very thankful to championswimmer.
+The code in this repository was inspired from [championswimmer/Android-SocialButtons - v1.1](https://github.com/championswimmer/Android-SocialButtons). We are very thankful to championswimmer.
 
 Screenshot
 ----------
