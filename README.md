@@ -26,7 +26,7 @@ In order to use the library, add the following line to your **root** gradle file
 I) For using SocialButton module in sample app, include the source code and add the below dependencies in entry/build.gradle to generate hap/support.har.
 ```
 dependencies {
-            implementation project(':libsocialbuttons')
+            implementation project(':socialbuttons')
             implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
             testImplementation 'junit:junit:4.13'
             ohosTestImplementation 'com.huawei.ohos.testkit:runner:1.0.0.100'
