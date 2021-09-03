@@ -39,6 +39,15 @@ dependencies {
         testImplementation 'junit:junit:4.12'
 }
 ```
+III) For using SocialButton from a remote repository in separate application, add the below dependencies in entry/build.gradle file.
+```
+dependencies {
+        implementation 'dev.applibgroup:socialbuttons:1.0.0'
+        testImplementation 'junit:junit:4.13'
+        ohosTestImplementation 'com.huawei.ohos.testkit:runner:1.0.0.100'
+}
+```
+
 ### Floating Action Buttons
 #### Usage
 To use FloatingActionButtons, (for example a Facebook button), use the `FABFacebook` component
